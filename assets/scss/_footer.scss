@@ -1,0 +1,95 @@
+
+/*!
+    Footer
+!*/
+
+*, *:before, *:after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#footer {
+    padding: 2rem;
+    background: $blue;
+    z-index: 100;
+    position: relative;
+}
+
+.ft-logo {
+    display: block;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-1rem);
+    position: absolute;
+    z-index: 5;
+    height: 69px;
+}
+
+#ft-nav {
+    position: relative;
+
+    p {
+        color: #fff;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .8rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+
+        li {
+
+            // padding: 0 1%;
+            a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $bourton;
+                display: inline-block;
+                transition: all 0.3s ease-in-out;
+                font-weight: 200;
+                // padding: 0 10px;
+
+                &:hover {
+                    color: $gold;
+                }
+            }
+
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-links img {
+transition: filter 0.3s ease;
+}
+
+.social-links img:hover {
+filter: brightness(1.2);
+}
+
+
+@keyframes flavorTrain2 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -4381px 0; 
+    }
+}
+
+@media (min-width: 1201px) {
+    #ft-nav ul {
+        width: 65% !important;
+		}
+	}
