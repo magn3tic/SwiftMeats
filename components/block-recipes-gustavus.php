@@ -1,6 +1,6 @@
 <?php $recipes = get_sub_field('recipes'); ?>
 
-<div class="flex-grow-1 d-flex align-items-stretch justify-content-end">
+<div class="flex-grow-1 d-flex align-items-stretch justify-content-center">
     <div class="block--inner">
         <?php print get_sub_field('content'); ?>
 
